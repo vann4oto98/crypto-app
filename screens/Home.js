@@ -1,34 +1,18 @@
 import React from "react";
-import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
+import { View, ScrollView } from "react-native";
+
+import { PriceAlert } from "../components/common/PriceAlert";
+import { Header } from "../components/home/Header";
 
 const Home = ({ navigation }) => {
   return (
-    <View style={styles.container}>
-      <Text>Home</Text>
-      <TouchableOpacity onPress={() => navigation.navigate("CryptoDetail")}>
-        <Text>Navigate to CryptoDetail</Text>
-      </TouchableOpacity>
-    </View>
+    <ScrollView>
+      <View style={{ flex: 1, paddingBottom: 130 }}>
+        <Header />
+        <PriceAlert />
+      </View>
+    </ScrollView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  shadow: {
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.3,
-    shadowRadius: 4.65,
-
-    elevation: 8,
-  },
-});
 
 export default Home;
