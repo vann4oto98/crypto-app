@@ -5,9 +5,9 @@ const litecoin = require("../assets/images/litecoin.png");
 const ripple = require("../assets/images/ripple.png");
 
 export default {
-    banner,
-    bitcoin,
-    ethereum,
-    litecoin,
-    ripple
-}
+  banner,
+  bitcoin,
+  ethereum,
+  litecoin,
+  ripple,
+};

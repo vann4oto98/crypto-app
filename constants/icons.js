@@ -10,14 +10,14 @@ const star = require("../assets/icons/star.png");
 const transaction = require("../assets/icons/transaction.png");
 
 export default {
-    back_arrow,
-    home,
-    line_graph,
-    notification_color,
-    notification_white,
-    pie_chart,
-    right_arrow,
-    settings,
-    star,
-    transaction
-}
+  back_arrow,
+  home,
+  line_graph,
+  notification_color,
+  notification_white,
+  pie_chart,
+  right_arrow,
+  settings,
+  star,
+  transaction,
+};
